@@ -104,7 +104,7 @@ def start_test():
         question_label.grid(column=0, row=row_count, sticky=W)
         row_count += 1
         for answer in question['answers']:
-            # Creating variable IntVar() for each answer ana checkbox status
+            # Creating variable IntVar() for each answer and checkbox status
             question[answer] = IntVar()
             answer = Checkbutton(question_frame, text=answer, variable=question[answer])
             answer.grid(column=0, row=row_count, sticky=W)
